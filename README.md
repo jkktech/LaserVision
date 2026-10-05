@@ -28,3 +28,8 @@ Help: a built-in manual (F1), plus a PDF install guide and user manual.
 What you need: Windows 10/11, LightBurn, a Ruida controller on the network, a USB camera on the head (I use an Arducam B0205), and Python (the install guide walks through it).
 
 On my machine the test sheet cut right on the printed lines for every shape. Happy to hear how it works on other machines.
+
+Needed install instructions and manual are in the zip file.
+I will not support this project as I don't have time.
+You may suggest things, I will try and add them as I see fit for my needs.
+ENJOY!
