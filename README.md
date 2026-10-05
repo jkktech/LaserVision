@@ -1,7 +1,7 @@
 # LaserVision
 LaserVision: camera print-and-cut for LightBurn + Ruida (Thunder) lasers
 
-I print acrylic items, then cut them out on my Thunder Nova 51. Lining the cut up with the print by hand was slow and never quite exact. So I built a small Windows app that uses a USB camera on the laser head to find the registration marks and line everything up for me.
+I print acrylic items, then cut them out on my Thunder Nova 51. Lining the cut up with the print by hand was slow and never quite exact. So I (AI DID IT!) built a small Windows app that uses a USB camera on the laser head to find the registration marks and line everything up for me.
 
 [image 1: how it works]
 
