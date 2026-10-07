@@ -25,7 +25,9 @@ Help: a built-in manual (F1), plus a PDF install guide and user manual.
 
 [image 5: calibration]
 
-What you need: Windows 10/11, LightBurn, a Ruida controller on the network, a USB camera on the head (I use an Arducam B0205), and Python (the install guide walks through it).
+What you need: Windows 10/11, LightBurn, a Ruida controller on the network, a USB camera on the head (I use an Arducam B0205 at first, then switched to a endoscope), and Python (the install guide walks through it).
+Link to Endoscope Camera used: https://www.amazon.com/dp/B09B716SK3
+Link to the Arducam B0205 originally used: https://www.amazon.com/dp/B0829HZ3Q7
 
 On my machine the test sheet cut right on the printed lines for every shape. Happy to hear how it works on other machines.
 
