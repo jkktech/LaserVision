@@ -3,7 +3,7 @@ LaserVision: camera print-and-cut for LightBurn + Ruida (Thunder) lasers
 
 I print acrylic items, then cut them out on my Thunder Nova 51. Lining the cut up with the print by hand was slow and never quite exact. So I (AI DID IT!) built a small Windows app that uses a USB camera on the laser head to find the registration marks and line everything up for me.
 
-[image 1: how it works]
+![How it works](1_how_it_works.png)
 
 How it works
 
@@ -12,7 +12,11 @@ Lay the printed sheet on the bed, roughly straight. Jog the camera near the firs
 LaserVision works out how the sheet actually sits on the bed, including rotation, offset and any print scaling. It then writes an aligned LightBurn file that uses your own layer presets from an existing .lbrn2 file.
 Save + open in LightBurn, or Save + CUT to start the job after a confirmation.
 
-[image 2: main window] [image 3: camera finding a mark] [image 4: bed view before and after]
+![Main window](2_main_window.png)
+
+![Camera finding a mark](3_camera_finds_mark.png)
+
+![Bed view before and after](4_before_after.png)
 
 What else it does
 
@@ -23,7 +27,7 @@ Per-colour layers: each cut-line colour can go on its own layer, be left out, or
 Reg marks on T1: they're added on a tool layer, so you see them in LightBurn but they're never cut.
 Help: a built-in manual (F1), plus a PDF install guide and user manual.
 
-[image 5: calibration]
+![Calibration](5_calibration.png)
 
 What you need: Windows 10/11, LightBurn, a Ruida controller on the network, a USB camera on the head (I use an Arducam B0205 at first, then switched to a endoscope), and Python (the install guide walks through it).
 
