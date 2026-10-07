@@ -28,7 +28,8 @@ Help: a built-in manual (F1), plus a PDF install guide and user manual.
 What you need: Windows 10/11, LightBurn, a Ruida controller on the network, a USB camera on the head (I use an Arducam B0205 at first, then switched to a endoscope), and Python (the install guide walks through it).
 
 Link to Endoscope Camera used: https://www.amazon.com/dp/B09B716SK3 <br>
-Link to the Arducam B0205 originally used: https://www.amazon.com/dp/B0829HZ3Q7
+Link to the Arducam B0205 originally used: https://www.amazon.com/dp/B0829HZ3Q7 <br>
+Included in the files is the mount I used for the endoscope camera.  This was built for my Thunder 51 so you may need to make changes.
 
 On my machine the test sheet cut right on the printed lines for every shape. Happy to hear how it works on other machines.
 
