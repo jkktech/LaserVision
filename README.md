@@ -38,6 +38,16 @@ Included in the files is the mount I used for the endoscope camera.  This was bu
 On my machine the test sheet cut right on the printed lines for every shape. Happy to hear how it works on other machines.
 
 Needed install instructions and manual are in the zip file.
+
+## Download
+
+Latest version: [LaserVision-0.7.25-full.zip](LaserVision-0.7.25-full.zip). What changed in each version: [CHANGELOG.md](CHANGELOG.md).
+
+Older versions (kept in the repo history):
+- [0.7.23](https://github.com/jkktech/laservision/raw/44c5dd7d3f0d32b3e35109481dd154583082ce0a/LaserVision-0.7.23-full.zip)
+- [0.7.20](https://github.com/jkktech/laservision/raw/44c5dd7d3f0d32b3e35109481dd154583082ce0a/LaserVision-0.7.20-full.zip)
+- [0.7.10](https://github.com/jkktech/laservision/raw/44c5dd7d3f0d32b3e35109481dd154583082ce0a/LaserVision-0.7.10-full.zip)
+
 I will not support this project as I don't have time.
 You may suggest things, I will try and add them as I see fit for my needs.
 ENJOY!
