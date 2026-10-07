@@ -3,6 +3,14 @@
 All versions below ship as a **full package** (`LaserVision-x.y.z-full.zip`), which contains `Start LaserVision.bat`, `Install add-ons.bat`, the `Test sheet` folder, `Docs` (User Manual and Install Guide PDFs) and the `LaserVision-x.y.z` program folder.
 Times are when each package was built (US Central). To update, unzip the new program folder next to the old one. The launcher always starts the newest version, and every version shares one `settings.json`.
 
+## 0.7.25 — 2026-10-07 10:29 CDT
+### Changed
+- The layer presets file is now read again **only when you load a cut file or press Start over**. The automatic check every 2 s and the check before Save from 0.7.24 are removed, to keep file reads down. After changing the presets in LightBurn, press **Start over**.
+
+## 0.7.24 — 2026-10-07 09:38 CDT
+### Fixed
+- **The layer presets file is read again** instead of only once at start-up. This happens when you load a cut file, press **Start over**, and automatically within about 2 s after you save the file in LightBurn. The layer dropdowns show the new names and speed/power, and the layer you picked for each colour is kept. If the file changed just before **Save**, you're asked to check the colour choices first.
+
 ## 0.7.23 — 2026-10-06 14:56 CDT
 ### Added
 - **"Now:" bar** above the status line, showing what the machine is doing at this moment with a running timer. Examples: *Mark 2 of 4: moving head to X 300.2, Y 749.3 (224 mm)*, *waiting for the camera picture to settle*, *taking picture 3/6*, *measuring the circle*, *confirming*, *short pause before moving on*. Calibration steps, burns, jogs and moves are covered too. The bar turns yellow if one step takes more than 12 s, so you can tell stuck from busy.
