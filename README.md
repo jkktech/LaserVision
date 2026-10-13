@@ -41,6 +41,8 @@ Link to Endoscope Camera used: https://www.amazon.com/dp/B09B716SK3 <br>
 Link to the Arducam B0205 originally used: https://www.amazon.com/dp/B0829HZ3Q7 <br>
 Included in the files is the mount I used for the endoscope camera.  This was built for my Thunder 51 so you may need to make changes.
 
+Also included: a mount for the **Thunder Bolt** ([ThunderBolt-StethoscopeMount.stl](ThunderBolt-StethoscopeMount.stl)), contributed by D. McHenry. Thank you!
+
 On my machine the test sheet cut right on the printed lines for every shape. Happy to hear how it works on other machines.
 
 Needed install instructions and manual are in the zip file.
