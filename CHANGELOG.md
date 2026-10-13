@@ -3,6 +3,11 @@
 All versions below ship as a **full package** (`LaserVision-x.y.z-full.zip`), which contains `Start LaserVision.bat`, `Install add-ons.bat`, the `Test sheet` folder, `Docs` (User Manual and Install Guide PDFs) and the `LaserVision-x.y.z` program folder.
 Times are when each package was built (US Central). To update, unzip the new program folder next to the old one. The launcher always starts the newest version, and every version shares one `settings.json`.
 
+## 0.7.26 — 2026-10-13 14:37 CDT
+### Fixed
+- **Glossy material (for example black acrylic).** The shiny surface mirrors the laser head, and because that reflection moves with the camera, LaserVision could lock onto it instead of the mark. A "mark" that stays put in the picture while the head moves is now recognised as a reflection, ignored for the rest of the sheet, and the search carries on. The Now: bar shows *ignoring a reflection of the laser head*.
+- Light marks on dark gloss, such as a white dot on black, are now accepted by the outline finder even with bright reflections around them. Weak partial circles, such as reflections of the nozzle, are dropped when a clear round mark is in view.
+
 ## 0.7.25 — 2026-10-07 10:29 CDT
 ### Changed
 - The layer presets file is now read again **only when you load a cut file or press Start over**. The automatic check every 2 s and the check before Save from 0.7.24 are removed, to keep file reads down. After changing the presets in LightBurn, press **Start over**.
