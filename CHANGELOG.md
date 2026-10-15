@@ -3,6 +3,24 @@
 All versions below ship as a **full package** (`LaserVision-x.y.z-full.zip`), which contains `Start LaserVision.bat`, `Install add-ons.bat`, the `Test sheet` folder, `Docs` (User Manual and Install Guide PDFs) and the `LaserVision-x.y.z` program folder.
 Times are when each package was built (US Central). To update, unzip the new program folder next to the old one. The launcher always starts the newest version, and every version shares one `settings.json`.
 
+## 0.8.0 — 2026-10-15 08:26 CDT
+### Changed
+- **No more Connect step, and LightBurn can stay open.** While LaserVision is connected, LightBurn can't control the laser. LaserVision now connects by itself when it needs the laser (jog, Go to, double-click on the bed, click in the camera picture, Auto-measure, Find this mark, calibration, camera check) and lets go of it again:
+  - after **60 s** without laser activity (**Release the laser after idle** in Settings; 0 = never). It is never released while measuring or while the Calibration window is open;
+  - when you press **Send to LightBurn** or **Release** (the old Connect/Disconnect button);
+  - when LaserVision closes.
+- **Send to LightBurn** replaces *Save + open in LightBurn*. It saves, releases the laser and opens the file in LightBurn as a new project. You check the job and press Start in LightBurn.
+- "No reply from the laser" now mentions that LightBurn may have been busy with the laser.
+
+### Removed
+- **Save + CUT** and its confirmation dialog. LaserVision no longer starts jobs; you start them in LightBurn after checking the file.
+
+### Added
+- **Pair with LightBurn…** (Settings, LightBurn 2.2 or newer with its API turned on). LightBurn asks once to allow LaserVision to read its status, read the open project and open files. Once paired, Send to LightBurn waits for LightBurn to confirm the file opened and shows the shape count. Without pairing, or with an older LightBurn, it uses the older UDP command as before.
+
+### Docs
+- User Manual and Install Guide updated: no Connect step, Send to LightBurn, the idle release setting and pairing (new Install Guide step 8). New screenshots of the main window, Laser/Jog, Cut file and Settings.
+
 ## 0.7.26 — 2026-10-13 14:37 CDT
 ### Fixed
 - **Glossy material (for example black acrylic).** The shiny surface mirrors the laser head, and because that reflection moves with the camera, LaserVision could lock onto it instead of the mark. A "mark" that stays put in the picture while the head moves is now recognised as a reflection, ignored for the rest of the sheet, and the search carries on. The Now: bar shows *ignoring a reflection of the laser head*.
