@@ -51,9 +51,10 @@ Needed install instructions and manual are in the zip file.
 
 ## Download
 
-Latest version: [LaserVision-0.8.0-full.zip](LaserVision-0.8.0-full.zip). What changed in each version: [CHANGELOG.md](CHANGELOG.md).
+Latest version: [LaserVision-0.8.1-full.zip](LaserVision-0.8.1-full.zip). What changed in each version: [CHANGELOG.md](CHANGELOG.md).
 
 Older versions (kept in the repo history):
+- [0.8.0](https://github.com/jkktech/laservision/raw/fe45d3cb55b6715369f44aa7e443bc082787ee80/LaserVision-0.8.0-full.zip)
 - [0.7.26](https://github.com/jkktech/laservision/raw/1af5681ba923792af9ac3fa2ff4a83779201b758/LaserVision-0.7.26-full.zip)
 - [0.7.25](https://github.com/jkktech/laservision/raw/4b177826cc5befd7455c5102257e741ee717ccc2/LaserVision-0.7.25-full.zip)
 - [0.7.23](https://github.com/jkktech/laservision/raw/44c5dd7d3f0d32b3e35109481dd154583082ce0a/LaserVision-0.7.23-full.zip)

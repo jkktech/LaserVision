@@ -3,6 +3,19 @@
 All versions below ship as a **full package** (`LaserVision-x.y.z-full.zip`), which contains `Start LaserVision.bat`, `Install add-ons.bat`, the `Test sheet` folder, `Docs` (User Manual and Install Guide PDFs) and the `LaserVision-x.y.z` program folder.
 Times are when each package was built (US Central). To update, unzip the new program folder next to the old one. The launcher always starts the newest version, and every version shares one `settings.json`.
 
+## 0.8.1 — 2026-10-20 10:04 CDT
+### Added
+- **Marks printed partly off the sheet.** When a mark is cut straight by the sheet edge, LaserVision no longer measures the half dot as if it were whole, which put its centre over 1 mm off and pulled the cut with it. Instead:
+  - It notices the dot is cut off and measures the other marks first.
+  - Then it comes back. With the other marks measured, it knows closely where this one is, and fits a circle of the dots' real size (taken from the other marks on the sheet) to the round part of its edge that's there, ignoring the straight sheet edge.
+  - The mark is used if it agrees with the other marks within 0.5 mm. Otherwise, or if less than about a third of its edge is there, it's left out: 3 marks are enough to line up the cut. The Result box says which, for example *#3: cut off at the sheet edge - fitted to the 51% of its edge that's there, 0.02 mm from where the other marks put it*.
+  - Whole dots that print a little smaller or bigger than the file's mark are recognised as whole.
+- **Skip this mark** button (3. Measure marks) leaves the next mark out by hand, for example a mark that isn't on the sheet at all. Three marks are always kept. **Undo last** also undoes a skip, and skipped marks show grey on the bed view.
+- Tested in simulation: one of 4 marks half off the sheet (all 4 used, cut within 0.02 mm), the first mark cut off (handled), dots printed 8% small (4 of 4, no false cut-offs).
+
+### Docs
+- User Manual: Skip this mark and cut-off marks; new screenshots of the main window and the Measure marks panel.
+
 ## 0.8.0 — 2026-10-15 08:26 CDT
 ### Changed
 - **No more Connect step, and LightBurn can stay open.** While LaserVision is connected, LightBurn can't control the laser. LaserVision now connects by itself when it needs the laser (jog, Go to, double-click on the bed, click in the camera picture, Auto-measure, Find this mark, calibration, camera check) and lets go of it again:
