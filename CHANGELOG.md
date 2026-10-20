@@ -3,6 +3,13 @@
 All versions below ship as a **full package** (`LaserVision-x.y.z-full.zip`), which contains `Start LaserVision.bat`, `Install add-ons.bat`, the `Test sheet` folder, `Docs` (User Manual and Install Guide PDFs) and the `LaserVision-x.y.z` program folder.
 Times are when each package was built (US Central). To update, unzip the new program folder next to the old one. The launcher always starts the newest version, and every version shares one `settings.json`.
 
+## 0.8.2 — 2026-10-20 10:07 CDT
+### Added
+- **The camera turns itself off after 10 minutes without use**, because some USB cameras start glitching when left on for a long time. "Without use" means no mouse or keyboard use in LaserVision and no camera or laser work. It never turns off while measuring or calibrating. It turns back on by itself when you press **Auto-measure all**, **Find this mark**, **Check camera** or **Set reference dot**, or you can press **Start camera**. The status line says when it was turned off. Change the time in Settings: *Turn the camera off after idle, min* (0 = never).
+
+### Docs
+- User Manual: the new setting, and a new Settings screenshot.
+
 ## 0.8.1 — 2026-10-20 10:04 CDT
 ### Added
 - **Marks printed partly off the sheet.** When a mark is cut straight by the sheet edge, LaserVision no longer measures the half dot as if it were whole, which put its centre over 1 mm off and pulled the cut with it. Instead:
